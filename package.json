@@ -1,10 +1,22 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "daedelus-games",
   "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
-  "type": "module",
+  "repository": "git@github.com:Haerezis/daedalus-games.git",
+  "description": "Word based and other graphical game generator.",
+  "author": "Thomas Kuntz <Haerezis@users.noreply.github.com>",
+  "private": true,
+  "license": "mpl-2.0",
   "engines": {
     "node": ">= 16.13 <17"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "jsonfile": "^6.1.0",
+    "moment": "^2.0.0",
+    "winston": "^3.6.0",
+    "tslib": "~2.3.1"
   },
   "devDependencies": {
     "@types/jest": "~27.4",
@@ -18,6 +30,8 @@
     "prettier": "~2.5",
     "rimraf": "~3.0",
     "ts-jest": "~27.1",
+    "ts-node": "^8.10.2",
+    "tsconfig-paths": "^3.9.0",
     "tsutils": "~3.21",
     "typescript": "~4.6"
   },
@@ -31,13 +45,5 @@
     "lint": "eslint . --ext .ts",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
-  },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "tslib": "~2.3.1"
-  },
-  "volta": {
-    "node": "16.13.0"
   }
 }
